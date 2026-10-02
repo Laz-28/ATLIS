@@ -1,1 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --overlay-08: rgba(0, 0, 0, 0.08);
+  --overlay-10: rgba(0, 0, 0, 0.1);
+  --overlay-12: rgba(0, 0, 0, 0.12);
+  --overlay-15: rgba(0, 0, 0, 0.15);
+  --overlay-30: rgba(0, 0, 0, 0.3);
+  --overlay-40: rgba(0, 0, 0, 0.4);
+  --overlay-45: rgba(0, 0, 0, 0.45);
+  --overlay-50: rgba(0, 0, 0, 0.5);
+  --overlay-55: rgba(0, 0, 0, 0.55);
+  --overlay-60: rgba(0, 0, 0, 0.6);
+  --overlay-65: rgba(0, 0, 0, 0.65);
+  --overlay-85: rgba(0, 0, 0, 0.85);
+  --btn-primary-bg: #000000;
+  --btn-primary-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --overlay-08: rgba(255, 255, 255, 0.08);
+    --overlay-10: rgba(255, 255, 255, 0.1);
+    --overlay-12: rgba(255, 255, 255, 0.12);
+    --overlay-15: rgba(255, 255, 255, 0.15);
+    --overlay-30: rgba(255, 255, 255, 0.3);
+    --overlay-40: rgba(255, 255, 255, 0.4);
+    --overlay-45: rgba(255, 255, 255, 0.45);
+    --overlay-50: rgba(255, 255, 255, 0.5);
+    --overlay-55: rgba(255, 255, 255, 0.55);
+    --overlay-60: rgba(255, 255, 255, 0.6);
+    --overlay-65: rgba(255, 255, 255, 0.65);
+    --overlay-85: rgba(255, 255, 255, 0.85);
+    --btn-primary-bg: #ffffff;
+    --btn-primary-text: #000000;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}

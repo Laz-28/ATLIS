@@ -10,7 +10,7 @@ function Header() {
     <header className="site-header">
       <NavLink to="/" end className="brand">
         <img src={logo} alt="" className="brand-mark" />
-        <span className="brand-name">Axiomstack</span>
+        <span className="brand-name">Atlis</span>
       </NavLink>
 
       <nav className="site-nav">

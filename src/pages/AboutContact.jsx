@@ -21,7 +21,7 @@ function AboutContact() {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nProject type: ${formData.projectType}\nBudget range: ${formData.budgetRange}\n\n${formData.message}`
     );
-    window.location.href = `mailto:hello@axiomstack.dev?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@atlis.dev?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -36,7 +36,7 @@ function AboutContact() {
         <div>
           <h3>Musk, founder</h3>
           <p>
-            Computer science student and developer in Nairobi. Axiomstack is a one-person studio
+            Computer science student and developer in Nairobi. Atlis is a one-person studio
             built on the belief that small teams get more attention than agencies with a dozen
             accounts to juggle.
           </p>

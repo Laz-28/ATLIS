@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-brand">
-        <span className="brand-name">Axiomstack</span>
+        <span className="brand-name">Atlis</span>
         <p className="footer-tagline">Software built with intent, not templates.</p>
       </div>
 
@@ -18,17 +18,17 @@ function Footer() {
       </nav>
 
       <div className="footer-contact">
-        <a href="mailto:hello@axiomstack.dev">hello@axiomstack.dev</a>
-        <a href="https://github.com/axiomstack" target="_blank" rel="noreferrer">
+        <a href="mailto:hello@atlis.dev">hello@atlis.dev</a>
+        <a href="https://github.com/atlis" target="_blank" rel="noreferrer">
           GitHub
         </a>
-        <a href="https://reddit.com/u/axiomstack" target="_blank" rel="noreferrer">
+        <a href="https://reddit.com/u/atlis" target="_blank" rel="noreferrer">
           Reddit
         </a>
       </div>
 
       <div className="footer-bottom">
-        <span>© {year} Axiomstack</span>
+        <span>© {year} Atlis</span>
       </div>
     </footer>
   );

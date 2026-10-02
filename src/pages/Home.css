@@ -1,6 +1,6 @@
 .home {
-  background: #000;
-  color: #fff;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .hero {
@@ -18,7 +18,7 @@
 }
 
 .hero-sub {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--overlay-60);
   font-size: 1rem;
   max-width: 32rem;
   margin: 0 auto 2rem;
@@ -41,34 +41,34 @@
 }
 
 .btn-primary {
-  background: #fff;
-  color: #000;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background: rgba(255, 255, 255, 0.85);
+  background: var(--overlay-85);
 }
 
 .btn-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
+  border: 1px solid var(--overlay-30);
+  color: var(--text);
 }
 
 .btn-secondary:hover {
-  border-color: #fff;
+  border-color: var(--text);
 }
 
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid var(--overlay-15);
+  border-bottom: 1px solid var(--overlay-15);
 }
 
 .service-card {
   padding: 2.5rem 2rem;
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid var(--overlay-15);
 }
 
 .service-card:first-child {
@@ -89,7 +89,7 @@
 
 .service-card p {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--overlay-55);
   line-height: 1.6;
 }
 
@@ -99,7 +99,7 @@
 
 .process-label {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--overlay-50);
   margin-bottom: 1.5rem;
 }
 
@@ -117,7 +117,7 @@
 .step-number {
   display: block;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--overlay-40);
   margin-bottom: 0.4rem;
 }
 
@@ -129,7 +129,7 @@
 
 .process-step p {
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--overlay-50);
 }
 
 .tech-strip {
@@ -137,16 +137,16 @@
   justify-content: center;
   gap: 2rem;
   padding: 1.5rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--overlay-10);
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--overlay-50);
   flex-wrap: wrap;
 }
 
 .cta-banner {
   text-align: center;
   padding: 3.5rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid var(--overlay-15);
 }
 
 .cta-banner h2 {
@@ -161,7 +161,7 @@
   }
   .service-card {
     border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid var(--overlay-15);
   }
   .service-card:first-child {
     border-top: none;

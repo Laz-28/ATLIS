@@ -4,9 +4,9 @@
   justify-content: space-between;
   gap: 1.5rem;
   padding: 1.5rem 2rem;
-  background: #000;
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg);
+  color: var(--text);
+  border-bottom: 1px solid var(--overlay-15);
 }
 
 .brand {
@@ -14,7 +14,7 @@
   align-items: center;
   gap: 0.6rem;
   text-decoration: none;
-  color: #fff;
+  color: var(--text);
 }
 
 .brand-mark {
@@ -36,7 +36,7 @@
 
 .nav-link {
   position: relative;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--overlay-65);
   text-decoration: none;
   font-size: 0.95rem;
   padding-bottom: 0.5rem;
@@ -44,11 +44,11 @@
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: var(--text);
 }
 
 .nav-link.is-active {
-  color: #fff;
+  color: var(--text);
 }
 
 /* Stepped underline on the active link — echoes the ziggurat mark instead of a plain line */
@@ -59,13 +59,13 @@
   bottom: 0;
   width: 65%;
   height: 4px;
-  background: #fff;
+  background: var(--text);
   clip-path: polygon(0 100%, 35% 100%, 35% 45%, 65% 45%, 65% 0, 100% 0, 100% 100%);
 }
 
 .cta-button {
   border: 1px solid #fff;
-  color: #fff;
+  color: var(--text);
   text-decoration: none;
   padding: 0.55rem 1.25rem;
   font-size: 0.9rem;
@@ -74,8 +74,8 @@
 }
 
 .cta-button:hover {
-  background: #fff;
-  color: #000;
+  background: var(--text);
+  color: var(--bg);
 }
 
 @media (max-width: 700px) {

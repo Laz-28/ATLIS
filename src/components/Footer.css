@@ -3,9 +3,9 @@
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: 2rem;
   padding: 3rem 2rem 1.5rem;
-  background: #000;
-  color: #fff;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--bg);
+  color: var(--text);
+  border-top: 1px solid var(--overlay-15);
 }
 
 .footer-brand .brand-name {
@@ -16,7 +16,7 @@
 
 .footer-tagline {
   margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--overlay-55);
   font-size: 0.9rem;
   max-width: 30ch;
 }
@@ -30,7 +30,7 @@
 
 .footer-nav a,
 .footer-contact a {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--overlay-65);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s ease;
@@ -38,16 +38,16 @@
 
 .footer-nav a:hover,
 .footer-contact a:hover {
-  color: #fff;
+  color: var(--text);
 }
 
 .footer-bottom {
   grid-column: 1 / -1;
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--overlay-08);
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--overlay-45);
 }
 
 @media (max-width: 640px) {
