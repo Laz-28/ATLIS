@@ -81,10 +81,19 @@
 @media (max-width: 700px) {
   .site-header {
     flex-wrap: wrap;
+    padding: 1rem 1.25rem;
   }
   .site-nav {
     gap: 1.25rem;
     order: 3;
     width: 100%;
+    justify-content: center;
+  }
+  .brand-name {
+    font-size: 1rem;
+  }
+  .cta-button {
+    padding: 0.45rem 1rem;
+    font-size: 0.85rem;
   }
 }

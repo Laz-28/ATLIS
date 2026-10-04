@@ -190,7 +190,25 @@
 }
 
 @media (max-width: 640px) {
+  .page-intro {
+    padding: 3.5rem 1.25rem 2rem;
+  }
+  .services-detail {
+    padding: 0 1.25rem;
+  }
+  .engagement,
+  .faq {
+    padding: 2.5rem 1.25rem;
+  }
+  .service-row {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem 0;
+  }
   .engagement-cards {
     flex-direction: column;
+  }
+  .cta-banner {
+    padding: 3rem 1.25rem;
   }
 }

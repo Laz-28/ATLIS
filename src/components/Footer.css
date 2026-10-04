@@ -53,5 +53,10 @@
 @media (max-width: 640px) {
   .site-footer {
     grid-template-columns: 1fr;
+    padding: 2.5rem 1.25rem 1.5rem;
+    gap: 2rem;
+  }
+  .footer-bottom {
+    margin-top: 1rem;
   }
 }
