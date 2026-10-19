@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
-  padding: 1.5rem 2rem;
+  gap: 2rem;
+  padding: 1.75rem 5.5rem;
   background: var(--bg);
   color: var(--text);
   border-bottom: 1px solid var(--overlay-15);
@@ -78,10 +78,16 @@
   color: var(--bg);
 }
 
+@media (max-width: 900px) {
+  .site-header {
+    padding: 1.25rem 2.5rem;
+  }
+}
+
 @media (max-width: 700px) {
   .site-header {
     flex-wrap: wrap;
-    padding: 1rem 1.25rem;
+    padding: 1rem 1.5rem;
   }
   .site-nav {
     gap: 1.25rem;

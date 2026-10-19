@@ -1,0 +1,250 @@
+.site-layout {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Ruled Double Lines Frame ── */
+.ruled-lines-frame {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 6;
+  overflow: hidden;
+}
+
+/* ── Wide Technical Track Lane (52px wide, 44px between lines) ── */
+.ruled-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 52px;
+  pointer-events: none;
+}
+
+.ruled-track--left {
+  left: 0;
+}
+
+.ruled-track--right {
+  right: 0;
+}
+
+/* ── Ruled Lines: 4px Thick Bars ── */
+.ruled-line {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  pointer-events: none;
+  transform-origin: bottom;
+  animation: ruleUp 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Outer 4px rule */
+.ruled-line--outer {
+  background: linear-gradient(
+    180deg,
+    var(--overlay-15) 0%,
+    var(--overlay-45) 8%,
+    var(--overlay-35) 50%,
+    var(--overlay-45) 92%,
+    var(--overlay-15) 100%
+  );
+  box-shadow:
+    0 0 10px var(--overlay-15),
+    0 0 2px var(--overlay-30);
+  border-radius: 2px;
+  animation-delay: 0s;
+}
+
+.ruled-track--left .ruled-line--outer {
+  left: 0;
+}
+
+.ruled-track--right .ruled-line--outer {
+  right: 0;
+}
+
+/* Inner 4px rule: 44px gap from outer line */
+.ruled-line--inner {
+  background: linear-gradient(
+    180deg,
+    var(--overlay-15) 0%,
+    var(--overlay-45) 8%,
+    var(--overlay-35) 50%,
+    var(--overlay-45) 92%,
+    var(--overlay-15) 100%
+  );
+  box-shadow:
+    0 0 10px var(--overlay-15),
+    0 0 2px var(--overlay-30);
+  border-radius: 2px;
+  animation-delay: 0.12s;
+}
+
+.ruled-track--left .ruled-line--inner {
+  left: 48px;
+}
+
+.ruled-track--right .ruled-line--inner {
+  right: 48px;
+}
+
+/* ── Architectural Drafting Ruler Ticks (Spanning 44px wide gap) ── */
+.ruled-ticks {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 44px;
+  opacity: 0.75;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 15px,
+    var(--overlay-20) 15px,
+    var(--overlay-20) 16px,
+    transparent 16px,
+    transparent 31px,
+    var(--overlay-35) 31px,
+    var(--overlay-35) 33px
+  );
+}
+
+.ruled-track--left .ruled-ticks {
+  left: 4px;
+}
+
+.ruled-track--right .ruled-ticks {
+  right: 4px;
+}
+
+/* ── Technical CAD Corner Tags ── */
+.ruled-corner-tag {
+  position: absolute;
+  font-family: 'Space Grotesk', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--overlay-45);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.ruled-corner-tag--top {
+  top: 12px;
+}
+
+.ruled-corner-tag--bottom {
+  bottom: 14px;
+}
+
+.ruled-track--left .ruled-corner-tag {
+  left: 60px;
+}
+
+.ruled-track--right .ruled-corner-tag {
+  right: 60px;
+  text-align: right;
+}
+
+/* ── Bottom-to-Top Ruled Animation ── */
+@keyframes ruleUp {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ruled-line {
+    animation: none;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+/* ── Tablet & Mobile Responsiveness ── */
+@media (max-width: 900px) {
+  .ruled-track {
+    width: 28px;
+  }
+
+  .ruled-line {
+    width: 3px;
+  }
+
+  .ruled-track--left .ruled-line--inner {
+    left: 24px;
+  }
+
+  .ruled-track--right .ruled-line--inner {
+    right: 24px;
+  }
+
+  .ruled-ticks {
+    width: 20px;
+  }
+
+  .ruled-track--left .ruled-ticks {
+    left: 4px;
+  }
+
+  .ruled-track--right .ruled-ticks {
+    right: 4px;
+  }
+
+  .ruled-corner-tag {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ruled-track {
+    width: 16px;
+  }
+
+  .ruled-line {
+    width: 2px;
+  }
+
+  .ruled-track--left .ruled-line--inner {
+    left: 14px;
+  }
+
+  .ruled-track--right .ruled-line--inner {
+    right: 14px;
+  }
+
+  .ruled-ticks {
+    width: 10px;
+  }
+
+  .ruled-track--left .ruled-ticks {
+    left: 2px;
+  }
+
+  .ruled-track--right .ruled-ticks {
+    right: 2px;
+  }
+}

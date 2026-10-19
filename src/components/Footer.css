@@ -1,8 +1,8 @@
 .site-footer {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 2rem;
-  padding: 3rem 2rem 1.5rem;
+  gap: 3rem;
+  padding: 4rem 5.5rem 2.5rem;
   background: var(--bg);
   color: var(--text);
   border-top: 1px solid var(--overlay-15);

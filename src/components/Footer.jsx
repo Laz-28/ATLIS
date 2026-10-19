@@ -14,6 +14,7 @@ function Footer() {
       <nav className="footer-nav">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
+        <Link to="/pricing">Pricing</Link>
         <Link to="/about">About</Link>
       </nav>
 
