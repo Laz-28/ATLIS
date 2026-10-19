@@ -68,7 +68,7 @@
   font-size: 0.8rem;
   color: var(--overlay-55);
   border: 1px solid var(--overlay-20);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 0.2rem 0.65rem;
 }
 
